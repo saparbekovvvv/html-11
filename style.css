@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Noto Serif", serif;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+a {
+  text-decoration: none;
+}
+#header {
+  background: #fbedda;
+  padding: 20px 0;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.links a {
+  font-size: 18px;
+  color: #021112;
+}
+.links button {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  padding: 12px 20px;
+  background: rgba(19, 166, 186, 1);
+  border: none;
+  border-radius: 8px;
+}
+.mobile-menu span {
+  font-size: 30px;
+}
+.mobile-menu {
+  display: none;
+}
+@media (max-width: 768px) {
+  .mobile-menu {
+    display: flex;
+  }
+  .links {
+    display: none;
+  }
+}
+#hero {
+  background: #fbedda;
+  padding: 50px 0;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tittle h1 {
+  font-size: 60px;
+  font-weight: 800;
+  text-align: center;
+  max-width: 900px;
+  padding-top: 100px;
+}
+.tittle p {
+  font-size: 20px;
+  color: #677071;
+  text-align: center;
+  padding-top: 30px;
+}
+.services {
+  width: 100%;
+  padding: 90px 0;
+  background: #fff;
+  margin-top: 100px;
+  border-radius: 30px;
+}
+.hero-content img {
+  width: 100%;
+}
+/* .services a {
+  color: #021112;
+  font-size: 26px;
+  font-weight: 600;
+  padding: 0 30px;
+}
+.services a:hover {
+  color: var(--black-shade-2, #cccfd0);
+} */
+@media (max-width: 1024px) {
+  .tittle h1 {
+    font-size: 60px;
+    padding-top: 65px;
+  }
+  .services {
+    margin-top: 65px;
+  }
+}
+@media (max-width: 768px) {
+  .tittle h1 {
+    font-size: 60px;
+    padding-top: 35px;
+  }
+  .services {
+    margin-top: 35px;
+  }
+}
+@media (max-width: 480px) {
+  .tittle h1 {
+    font-size: 40px;
+    padding-top: 25px;
+  }
+  .services {
+    margin-top: 25px;
+  }
+  .tittle p {
+    padding-top: 10px;
+  }
+}
